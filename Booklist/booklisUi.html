@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <!-- <style>
+    #message{
+      display: none;
+    }
+    </style> -->
+    <title>booklist</title>
+  </head>
+  <body class="bg-secondary">
+    <div class="container">
+      <h1 class="text-center">Book List</h1>
+      <div class="row">
+          <div class="col-md-6 offset-md-3">
+              <!-- <div id="message" role="alert"> </div> -->
+              <form id="form">
+                  <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" placeholder="Book Title">
+                  </div>
+                  <div class="form-group">
+                      <label for="author">Author</label>
+                      <input type="text" class="form-control" id="author" placeholder="Book's Author">
+                    </div>
+                    <div class="form-group">
+                        <label for="isbn">ISBN#</label>
+                        <input type="text" class="form-control" id="isbn" placeholder="Book's ISBN Number">
+                      </div>
+                  <button type="submit" class="btn btn-info btn-block" id="add">Add</button>
+                </form>
+                <hr>
+                <table class="table table-bordered table-hover">
+                    <caption class="text-dark">List of Books</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Title</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">ISBN</th>
+                        <th scope="col">Remove</th>
+                      </tr>
+                    </thead>
+                    <tbody id="book-list">
+                      
+                    </tbody>
+                  </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="booklistJSes6.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/bootstrapJquery.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+  </body>
+</html>
